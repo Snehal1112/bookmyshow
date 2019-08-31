@@ -1,0 +1,12 @@
+.cardView{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+
+.firstrow {
+	background: linear-gradient(to bottom, #f5f6f6 0%, gray 33%);
+}
+.lastrow {
+	background: linear-gradient(to top, #f5f6f6 0%, gray 33%);
+}
