@@ -6,25 +6,87 @@
 	display: none;
 }
 
-.movieCardWrapper{
-	height: 217px;
-	width: 12.5%;
-	margin-bottom: 20px;
+.movieCardWrapper {
+	height: 300px;
+	width: 16.5%;
+	padding: 0px 24px;
+	margin-bottom: 60px;
+	position: relative;
+	cursor: pointer;
+
 	@media (max-width: 1400px) {
 		width: 16.66667%;
 	}
+
 	@media (max-width: 1024px) {
 		width: 20%;
+		margin-right: 0px;
+		margin-left: 0px;
+		margin-bottom: 60px;
 	}
+
 	@media (max-width: 992px) {
 		width: 25%;
+		margin-right: 0px;
+		margin-left: 0px;
+		margin-bottom: 60px;
 	}
+
 	@media (max-width: 767px) {
 		width: 50%;
+		margin-right: 0px;
+		margin-left: 0px;
+		margin-bottom: 60px;
 	}
-	.movieCard{
+
+	cursor: pointer;
+	.movieCard {
 		background-color: red;
 		height: 100%;
+	}
+	.title {
 		margin: 0 10px;
+	}
+	.ratingContainer {
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		font-weight: bold;
+		padding: inherit;
+		text-align: right;
+		.perc {
+			font-size: 22px;
+			display: flex;
+			justify-content: center;
+			.icon {
+				margin-right: 10px;
+				color: rgb(0, 193, 145);
+			}
+		}
+	}
+	.releaseDate {
+		position: absolute;
+		right: 30px;
+		top: 10px;
+		height: 50px;
+		width: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		background-color: rgb(0, 193, 145);
+	}
+	.playIcon {
+		position: absolute;
+		left: 40%;
+		top: 40%;
+		i {
+			font-size: 50px;
+			transition-duration: 1s;
+			transform-style: flat;
+		}
+		:hover {
+			font-size: 60px;
+		}
 	}
 }
